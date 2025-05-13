@@ -1,27 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>ElevenLabs Convai Widget</title>
   <style>
-    body {
+    html, body {
+      height: 100%;
+      margin: 0;
+      background-color: #f0f2f5;
       font-family: Arial, sans-serif;
-      padding: 40px;
-      background-color: #f9f9f9;
-      text-align: center;
     }
+
+    .container {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      padding: 20px;
+    }
+
     h1 {
       color: #333;
+      margin-bottom: 30px;
     }
-    .widget-container {
-      margin-top: 40px;
+
+    elevenlabs-convai {
+      width: 100%;
+      max-width: 600px;
+      height: 600px;
     }
   </style>
 </head>
 <body>
-  <h1>Chat with the ElevenLabs Agent</h1>
-  <div class="widget-container">
+  <div class="container">
+    <h1>Chat with Our AI Agent</h1>
     <elevenlabs-convai agent-id="U8QKtWiHqIIzK9E6feqo"></elevenlabs-convai>
   </div>
   <script src="https://elevenlabs.io/convai-widget/index.js" async type="text/javascript"></script>
